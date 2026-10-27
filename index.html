@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adeel Akhtar — Full Stack Engineer & SDE | NSUT CSE</title>
+  <meta name="description"
+    content="Portfolio of Adeel Akhtar, Full Stack Engineer & Computer Science Undergrad at NSUT Delhi. Builder of MeshCall, Saksham AI, and scalable production web systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Ambient Ethereal Background Glows -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-top-right" aria-hidden="true"></div>
+  <div class="ambient-glow glow-middle-center" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+
+  <!-- Fixed Fullscreen Background Canvas for 360 Scroll Animation -->
+  <div class="canvas-viewport" id="canvasViewport" aria-hidden="true">
+    <canvas id="animationCanvas"></canvas>
+  </div>
+
+  <!-- Floating Scroll Status Pill -->
+  <div class="progress-pill" id="progressPill">
+    <span id="progressPercent">0%</span>
+    <span class="pill-divider">•</span>
+    <span id="frameCounter">01 / 240</span>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar glass-panel" id="mainNav">
+      <a href="#home" class="brand-group" aria-label="Adeel Akhtar Home">
+        <div class="brand-avatar">AA</div>
+        <div class="brand-text">
+          <span class="brand-name">Adeel Akhtar</span>
+          <span class="brand-role">Full Stack Engineer • NSUT</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Pill -->
+      <ul class="nav-links glass-capsule" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#work" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#achievements" class="nav-link">Honors</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA Button -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-pill-dark">
+          <span>Let's Connect</span>
+          <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17" />
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Dropdown Menu -->
+  <div class="mobile-menu glass-panel" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-link active">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#work" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#achievements" class="mobile-link">Honors</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Content Layers -->
+  <main class="page-container">
+
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="home">
+      <div class="hero-grid">
+        <!-- Hero Left Column -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>CSE @ NSUT • SDE &amp; FULL STACK DEVELOPER</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-name">Adeel Akhtar</span>
+            <span class="title-role gradient-text">Full Stack Software Engineer</span>
+          </h1>
+
+          <p class="hero-description">
+            Computer Science Engineering student at <strong>NSUT Delhi</strong> with production experience in
+            <strong>Next.js, TypeScript, Kotlin, Node.js, and Socket Architecture</strong>. Building distributed offline
+            mesh protocols and AI-driven platforms.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#work" class="btn btn-pill-dark btn-lg">
+              <span>View Projects</span>
+              <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+            <a href="assets/Adeel_Akhtar_Resume.pdf" download="Adeel_Akhtar_Resume.pdf" target="_blank"
+              class="btn btn-pill-glass btn-lg" id="downloadCvBtn" title="Download Adeel Akhtar's Resume (PDF)">
+              <span>Contact / Resume</span>
+              <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 4v12m0 0l-4-4m4 4l4-4M4 18h16" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Experience Organizations / Tech Highlights -->
+          <div class="trusted-section">
+            <span class="trusted-label">Experience &amp; Leadership at</span>
+            <div class="trusted-logos">
+              <div class="logo-item" title="Zidio Development">
+                <span class="org-pill">Zidio Development</span>
+              </div>
+              <div class="logo-item" title="She Can Foundation">
+                <span class="org-pill">She Can Foundation</span>
+              </div>
+              <div class="logo-item" title="TheAEK">
+                <span class="org-pill">TheAEK (theaek.com)</span>
+              </div>
+              <div class="logo-item" title="Khelo India Para Games 2025">
+                <span class="org-pill">Khelo India '25</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column (Interactive Visual Area with Floating Badges over Background 3D Model) -->
+        <div class="hero-visual">
+          <div class="hero-frame-container">
+
+            <!-- Floating Pill 1: Hackathon Finalist -->
+            <div class="floating-badge badge-experience glass-card">
+              <div class="exp-number">Top 9</div>
+              <div class="exp-text">MUJ HACK X 4.0<br>636 Global Teams</div>
+            </div>
+
+            <!-- Floating Element 2: 3D Translucent Sparkle Star -->
+            <div class="floating-sparkle" aria-hidden="true">
+              <img src="assets/sparkle_3d.jpg" alt="3D glass sparkle" class="sparkle-img">
+            </div>
+
+            <!-- Floating Pill 3: Production Impact -->
+            <div class="floating-badge badge-impact glass-card">
+              <div class="impact-header">
+                <span class="impact-label">Production Users</span>
+                <span class="impact-value">500+ Active</span>
+              </div>
+              <svg class="impact-chart" viewBox="0 0 120 36" fill="none">
+                <defs>
+                  <linearGradient id="chartGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#818cf8" />
+                    <stop offset="100%" stop-color="#4f46e5" />
+                  </linearGradient>
+                </defs>
+                <path d="M4 28 C 24 26, 40 18, 58 20 C 76 22, 92 8, 116 6" stroke="url(#chartGrad)" stroke-width="2.5"
+                  stroke-linecap="round" fill="none" />
+                <circle cx="116" cy="6" r="3.5" fill="#4f46e5" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME & EDUCATION SECTION -->
+    <section class="section about-section" id="about">
+      <div class="section-container">
+        <div class="section-tag-group">
+          <span class="section-tag">EDUCATION &amp; BACKGROUND</span>
+          <h2 class="section-title">Engineering with Logic<br>Building for Real-World Impact</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Stat Cards -->
+          <div class="about-stats-column">
+            <div class="stat-card glass-card">
+              <div class="stat-icon-wrapper icon-orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c0 2 6 3 6 3s6-1 6-3v-5" />
+                </svg>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number">NSUT '27</div>
+                <div class="stat-title">B.Tech Computer Science Engineering (Delhi)</div>
+              </div>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon-wrapper icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number">3 Roles</div>
+                <div class="stat-title">Zidio Dev • She Can • TheAEK</div>
+              </div>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon-wrapper icon-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number">Rank 9th</div>
+                <div class="stat-title">MUJ HACK X 4.0 International Finalist (636 Teams)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio Description & Highlights -->
+          <div class="about-bio-column glass-card">
+            <p class="bio-text">
+              I'm Adeel Akhtar, a Computer Science Engineering undergraduate at Netaji Subhas University of Technology
+              (NSUT), Delhi.
+            </p>
+            <p class="bio-subtext">
+              Passionate about building resilient distributed systems, modern full-stack web applications, and AI
+              integrations. From architecting offline peer-to-peer mesh protocols using Kotlin &amp; Wi-Fi Direct to
+              integrating Gemini AI in modern EdTech portals, I focus on scalable software engineering, clean code
+              architecture, and high reliability.
+            </p>
+            <div class="about-actions">
+              <a href="#experience" class="btn btn-pill-glass">
+                <span>View Work Experience</span>
+                <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="section-container">
+        <div class="section-tag-group">
+          <span class="section-tag">PROFESSIONAL EXPERIENCE</span>
+          <h2 class="section-title">Where I've Built &amp; Shipped</h2>
+        </div>
+
+        <div class="experience-list">
+          <!-- Role 1: Zidio Development -->
+          <div class="experience-card glass-card">
+            <div class="exp-header-row">
+              <div class="exp-role-info">
+                <h3 class="exp-company-title">Zidio Development</h3>
+                <span class="exp-designation">SDE — Intern (Remote)</span>
+              </div>
+              <span class="exp-duration-badge">Sept 2026 – Present</span>
+            </div>
+            <ul class="exp-bullet-points">
+              <li>Contributing to software development by implementing application features and improving existing
+                functionality across production codebases.</li>
+              <li>Working on backend logic, API integration, and database operations as part of core development tasks.
+              </li>
+              <li>Debugging critical issues and writing automated tests to guarantee reliable application behaviour and
+                system stability.</li>
+            </ul>
+          </div>
+
+          <!-- Role 2: She Can Foundation -->
+          <div class="experience-card glass-card">
+            <div class="exp-header-row">
+              <div class="exp-role-info">
+                <h3 class="exp-company-title">She Can Foundation</h3>
+                <span class="exp-designation">Full Stack Engineer — Intern (Remote)</span>
+              </div>
+              <span class="exp-duration-badge">Aug 2026 – Sept 2026</span>
+            </div>
+            <ul class="exp-bullet-points">
+              <li>Managed and maintained the official She Can Foundation web platform using <strong>React.js, Next.js,
+                  and Tailwind CSS</strong>.</li>
+              <li>Architected and implemented the donation module, integrating payment gateway APIs to securely support
+                live online donations.</li>
+              <li>Handled dynamic website feature updates, third-party API integrations, and bug fixes to ensure a
+                seamless donor user experience.</li>
+            </ul>
+          </div>
+
+          <!-- Role 3: TheAEK -->
+          <div class="experience-card glass-card">
+            <div class="exp-header-row">
+              <div class="exp-role-info">
+                <h3 class="exp-company-title">TheAEK (theaek.com)</h3>
+                <span class="exp-designation">Web Developer (Gurugram, India)</span>
+              </div>
+              <span class="exp-duration-badge">Apr 2025 – May 2026</span>
+            </div>
+            <ul class="exp-bullet-points">
+              <li>Developed and maintained a production website for 1+ year using <strong>Next.js, TypeScript, and
+                  Tailwind CSS</strong>, leading feature rollouts and page speed optimization.</li>
+              <li>Built modular, accessible UI components and interactive web pages delivering a consistent experience
+                across desktop and mobile devices.</li>
+              <li>Boosted organic search traffic through SEO-optimized content workflows, managed GitHub repositories,
+                Vercel deployments, and DNS configuration supporting <strong>5000+ monthly active users</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED PROJECTS SECTION -->
+    <section class="section work-section" id="work">
+      <div class="section-container">
+        <div class="section-header-flex">
+          <div class="section-tag-group">
+            <span class="section-tag">PROJECTS</span>
+            <h2 class="section-title">Featured Systems &amp; Platforms</h2>
+          </div>
+          <a href="https://github.com/imadeelakhtar" target="_blank" rel="noopener" class="link-view-all">
+            <span>View GitHub Repositories</span>
+            <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M17 7H7M17 7V17" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: MeshCall -->
+          <article class="project-card glass-card">
+            <div class="project-thumb-box">
+              <img src="assets/meshcall_app.jpg" alt="MeshCall Offline Mesh Communication App" class="project-image"
+                loading="lazy">
+              <div class="project-overlay">
+                <span class="btn-preview-tag">Android • Wi-Fi Direct</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <h3 class="project-title">MeshCall — Offline P2P Mesh Network</h3>
+                <span class="project-category">Kotlin, Wi-Fi Direct, TCP Sockets, SQLite, GPS</span>
+              </div>
+              <a href="https://github.com/imadeelakhtar" target="_blank" rel="noopener" class="project-link-btn"
+                aria-label="View MeshCall on GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </a>
+            </div>
+            <p class="project-desc-text">
+              Offline peer-to-peer communication app supporting encrypted messaging, voice calls, file sharing, and GPS
+              location without internet. Built multi-hop mesh routing with dynamic TTL, next-hop selection, and
+              split-horizon routing.
+            </p>
+          </article>
+
+          <!-- Project 2: Saksham AI -->
+          <article class="project-card glass-card">
+            <div class="project-thumb-box">
+              <img src="assets/saksham_ai.jpg" alt="Saksham AI Ed-Tech Platform" class="project-image" loading="lazy">
+              <div class="project-overlay">
+                <span class="btn-preview-tag">AI • Gemini API</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <h3 class="project-title">Saksham AI — Ed-Tech Platform</h3>
+                <span class="project-category">Next.js, TypeScript, Gemini API, Firebase, YT API</span>
+              </div>
+              <a href="https://github.com/imadeelakhtar" target="_blank" rel="noopener" class="project-link-btn"
+                aria-label="View Saksham AI on GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </a>
+            </div>
+            <p class="project-desc-text">
+              Intelligent learning platform featuring an interactive AI Tutor, PDF Chat document analyzer,
+              Video-to-Notes synthesizer, and personalized recommendations powered by Gemini API, Firebase
+              Authentication, and Framer Motion.
+            </p>
+          </article>
+
+          <!-- Project 3: TheAEK & She Can Web Portal -->
+          <article class="project-card glass-card">
+            <div class="project-thumb-box">
+              <img src="assets/saas_landing.jpg" alt="Production Web Applications" class="project-image" loading="lazy">
+              <div class="project-overlay">
+                <span class="btn-preview-tag">Production • Live</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <h3 class="project-title">TheAEK &amp; She Can Platform</h3>
+                <span class="project-category">Next.js, TypeScript, Tailwind CSS, Vercel</span>
+              </div>
+              <a href="https://theaek.com" target="_blank" rel="noopener" class="project-link-btn"
+                aria-label="View TheAEK Website">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </a>
+            </div>
+            <p class="project-desc-text">
+              Production web applications serving 500+ monthly active users with integrated secure payment gateway for
+              donations, SEO-optimized blog architecture, and continuous deployment workflows on Vercel.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="section-container">
+        <div class="section-tag-group">
+          <span class="section-tag">TECHNICAL SKILLS</span>
+          <h2 class="section-title">Languages, Frameworks &amp; Tools</h2>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- Category 1: Languages -->
+          <div class="skills-cat-card glass-card">
+            <h3 class="skills-cat-title">
+              <span class="cat-dot dot-purple"></span> Languages
+            </h3>
+            <div class="skills-tag-cloud">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Kotlin</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">C++</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Frontend -->
+          <div class="skills-cat-card glass-card">
+            <h3 class="skills-cat-title">
+              <span class="cat-dot dot-blue"></span> Frontend Development
+            </h3>
+            <div class="skills-tag-cloud">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">HTML5 &amp; CSS3</span>
+              <span class="skill-tag">Framer Motion</span>
+              <span class="skill-tag">Responsive UI/UX</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Backend & Architecture -->
+          <div class="skills-cat-card glass-card">
+            <h3 class="skills-cat-title">
+              <span class="cat-dot dot-amber"></span> Backend &amp; Distributed Systems
+            </h3>
+            <div class="skills-tag-cloud">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Socket.IO</span>
+              <span class="skill-tag">TCP Sockets</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">Firebase Auth</span>
+              <span class="skill-tag">Wi-Fi Direct P2P</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Databases & DevOps Tools -->
+          <div class="skills-cat-card glass-card">
+            <h3 class="skills-cat-title">
+              <span class="cat-dot dot-cyan"></span> Databases &amp; Cloud Tools
+            </h3>
+            <div class="skills-tag-cloud">
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">SQLite</span>
+              <span class="skill-tag">Git &amp; GitHub</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Vercel &amp; Render</span>
+              <span class="skill-tag">Android Studio</span>
+              <span class="skill-tag">Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP & ACHIEVEMENTS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="section-container">
+        <div class="section-tag-group">
+          <span class="section-tag">LEADERSHIP &amp; HONORS</span>
+          <h2 class="section-title">Hackathons &amp; Responsibilities</h2>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Achievement 1: MUJ HACK -->
+          <div class="achievement-card glass-card">
+            <div class="achieve-badge-row">
+              <span class="achieve-rank">Rank 9th</span>
+              <span class="achieve-scope">Global Hackathon</span>
+            </div>
+            <h3 class="achieve-title">MUJ HACK X 4.0 Finalist</h3>
+            <p class="achieve-desc">
+              Ranked <strong>9th among Top 160 Finalists</strong> at the prestigious international hackathon, competing
+              with <strong>636 teams from across the globe</strong>.
+            </p>
+          </div>
+
+          <!-- Achievement 2: Devlympics -->
+          <div class="achievement-card glass-card">
+            <div class="achieve-badge-row">
+              <span class="achieve-rank">Top 5</span>
+              <span class="achieve-scope">NSUT Hackathon</span>
+            </div>
+            <h3 class="achieve-title">Devlympics Hackathon</h3>
+            <p class="achieve-desc">
+              Secured a <strong>Top 5 position</strong> among 175 competing teams at NSUT with an innovative technology
+              solution.
+            </p>
+          </div>
+
+          <!-- Achievement 3: Khelo India -->
+          <div class="achievement-card glass-card">
+            <div class="achieve-badge-row">
+              <span class="achieve-rank">Lead</span>
+              <span class="achieve-scope">National Games</span>
+            </div>
+            <h3 class="achieve-title">Lead, IT Department</h3>
+            <p class="achieve-desc">
+              Led IT operations and technical infrastructure for the <strong>Khelo India Para Games 2025</strong> at JLN
+              Stadium, New Delhi.
+            </p>
+          </div>
+
+          <!-- Achievement 4: AI & Algorithm Society -->
+          <div class="achievement-card glass-card">
+            <div class="achieve-badge-row">
+              <span class="achieve-rank">Executive</span>
+              <span class="achieve-scope">Student Council</span>
+            </div>
+            <h3 class="achieve-title">General Secretary, AI &amp; Algorithm Society</h3>
+            <p class="achieve-desc">
+              Elected General Secretary at the <strong>Artificial Intelligence &amp; Algorithm Society, NSUT</strong>,
+              leading workshops and competitive programming events.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LET'S CONNECT / CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="contact-card-wrapper glass-card">
+          <div class="contact-grid">
+            <!-- Left Info -->
+            <div class="contact-info-col">
+              <span class="section-tag">LET'S CONNECT</span>
+              <h2 class="contact-headline">
+                Have an opportunity or project?<br>Let's collaborate together.
+              </h2>
+
+              <div class="contact-methods">
+                <a href="mailto:adeelakhtar783@gmail.com" class="contact-item">
+                  <div class="contact-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                  <div class="contact-detail">
+                    <span class="detail-label">Email</span>
+                    <span class="detail-val">adeelakhtar783@gmail.com</span>
+                  </div>
+                </a>
+
+                <a href="tel:+917011227042" class="contact-item">
+                  <div class="contact-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
+                  <div class="contact-detail">
+                    <span class="detail-label">Phone</span>
+                    <span class="detail-val">+91 7011227042</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com/imadeelakhtar" target="_blank" rel="noopener" class="contact-item">
+                  <div class="contact-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                  </div>
+                  <div class="contact-detail">
+                    <span class="detail-label">GitHub Profile</span>
+                    <span class="detail-val">github.com/imadeelakhtar</span>
+                  </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/adeel-akhtar0786/" target="_blank" rel="noopener"
+                  class="contact-item" title="LinkedIn Profile">
+                  <div class="contact-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                      <rect x="2" y="9" width="4" height="12" />
+                      <circle cx="4" cy="4" r="2" />
+                    </svg>
+                  </div>
+                  <div class="contact-detail">
+                    <span class="detail-label">LinkedIn</span>
+                    <span class="detail-val">in/adeel-akhtar0786</span>
+                  </div>
+                </a>
+
+                <a href="assets/Adeel_Akhtar_Resume.pdf" download="Adeel_Akhtar_Resume.pdf" target="_blank"
+                  class="contact-item resume-contact-item">
+                  <div class="contact-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                      <polyline points="14 2 14 8 20 8" />
+                      <line x1="12" y1="18" x2="12" y2="12" />
+                      <polyline points="9 15 12 18 15 15" />
+                    </svg>
+                  </div>
+                  <div class="contact-detail">
+                    <span class="detail-label">Official Resume</span>
+                    <span class="detail-val">Download Adeel's CV (PDF)</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div class="contact-form-col">
+              <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); handleFormSubmit();">
+                <div class="form-row-duo">
+                  <div class="form-group">
+                    <label for="userName" class="form-label">Your Name</label>
+                    <input type="text" id="userName" class="form-input" placeholder="e.g. Hiring Manager / Founder"
+                      required>
+                  </div>
+                  <div class="form-group">
+                    <label for="userEmail" class="form-label">Your Email</label>
+                    <input type="email" id="userEmail" class="form-input" placeholder="e.g. name@company.com" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectType" class="form-label">Opportunity Type</label>
+                  <select id="projectType" class="form-input form-select" required>
+                    <option value="" disabled selected>Select opportunity focus</option>
+                    <option value="SDE Role">Software Development Engineering (SDE / Full Time)</option>
+                    <option value="Internship">Full Stack / Backend Internship</option>
+                    <option value="Freelance / Contract">Full Stack Web Project / Contract</option>
+                    <option value="Open Source Collaboration">Open Source / Research Collaboration</option>
+                    <option value="Other">General Discussion</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="userMessage" class="form-label">Your Message</label>
+                  <textarea id="userMessage" class="form-input form-textarea" rows="4"
+                    placeholder="Tell me about the role, technical challenge, or project..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-pill-dark btn-submit" id="submitBtn">
+                  <span>Send Message</span>
+                  <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                  </svg>
+                </button>
+
+                <div class="form-status-alert" id="formAlert"></div>
+              </form>
+
+              <!-- Floating 3D Crystal Ribbon Accent -->
+              <div class="contact-crystal-accent" aria-hidden="true">
+                <img src="assets/ribbon_3d.jpg" alt="3D glass ribbon" class="ribbon-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-wrapper">
+      <div class="footer-container">
+        <div class="footer-left">
+          <span class="footer-copy">© 2026 Adeel Akhtar. All rights reserved.</span>
+          <span class="footer-location">B.Tech Computer Science Engineering • NSUT Delhi</span>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/imadeelakhtar" target="_blank" rel="noopener" class="social-icon"
+            aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/adeel-akhtar0786/" target="_blank" rel="noopener" class="social-icon"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="mailto:adeelakhtar783@gmail.com" class="social-icon" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
